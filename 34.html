@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>&#x2764;&#x2764;</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/cirrus-ui@0.6.0/dist/cirrus.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <script type="text/javascript">
+            // window.addEventListener('scroll', function(e) {
+                // console.log((window.scrollY + window.innerHeight) - document.documentElement.scrollHeight);
+                // var img = document.querySelector('img');
+                // var ratio = Math.pow(((window.scrollY + window.innerHeight) - img.offsetTop) / img.height, 2);
+                // img.style.transform = `scale(${ratio*100}%)`;
+            // });
+            var color = 0;
+            function tick() {
+                color = (color + 2) % 360;
+                document.body.style.backgroundColor = 'hsl(' + color + ', 100%, 80%)';
+            }
+            window.setInterval(tick, 16);
+        </script>
+        <style type="text/css">
+@keyframes sleep {
+    0% {
+        transform: rotate(-15deg);
+    }
+    25% {
+        transform: translateY(-0.25rem);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: translateY(0.25rem);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+.fa-bed {
+    transform-origin: 50% 50%;
+    animation: sleep 2s infinite linear;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: translateY(-0.5rem);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.fa-cat {
+    transform-origin: 50% 50%;
+    animation: jump 0.3s infinite linear;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(100%);
+        animation-timing-function: cubic-bezier(.55,.06,.68,.19);
+    }
+    50% {
+        transform: scale(150%);
+        animation-timing-function: cubic-bezier(.22,.61,.36,1);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+p .fa-heart {
+    transform-origin: 50% 50%;
+    animation: zoom 0.7s infinite linear;
+}
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="u-center">Дорога Яся!</h1>
+            <h1 class="u-center"><i class="fa fa-heart" style="color: #CC0000"></i></h1>
+            <p>Я пишу це, поки ти спиш, а ти зараз читаєш це, поки сплю я. <i class="fa fa-bed"></i></p>
+            <p>Я такий вдячний тобі за те, що ти в мене є.</p>
+            <p>Я хочу тебе привітати з твоїм 19-річчям. <i class="far fa-smile"></i> Число - це хуїта. Головне - те, якими ми почуваємося морально. Якщо ми щасливі, то ніякі цифри, числа, люди, місця, ситуації та обставини не матимуть над нами жодної влади.</p>
+            <p>Я неймовірно радий, що моя доля звела мене з такою дбайливою, щирою і доброю кицьою.</p>
+            <p>Я радію, що ти в мене є, і я намагатимусь зробити все, щоб ти була в мене найщасливіщою котічкою на світі. <i class="fa fa-cat"></i></p>
+            <p>Я тебе дуже сильно люблю. <i class="fa fa-heart"></i></p>
+            <p>П.С. Якщо ти б хотіла замінити мій подарунок на щось інше - не соромся і скажи, я не ображуся. Я вибрав те, що мені сподобалося, але мені важливіше, щоб це подобалося тобі. Я анітрохи не ображуся. <i class="far fa-laugh-wink"></i></p>
+            <p>П.П.С. Пробач, що ти мене зараз будитимеш, а я ніяк не прокидатимусь. Я вранці такий тупий овоч, що ну нафіг. <i class="fa fa-carrot"></i></p>
+            <img class="u-center" src="./cats2.jpg" style="border-radius: 50%; transform-origin: 50% 50%" />
+        </div>
+    </body>
+</html>
